@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #101010;
+  --secondary-background: #181818;
+  --foreground: #ffffff;
+  --viewport-max-width: 1000px;
+  --viewport-padding-x: 30px;
+}
+@media screen and (max-width: 580px) {
+  :root {
+    --viewport-padding-x: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  :root {
+    --viewport-padding-x: 16px;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, Arial, Helvetica, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  margin: 0px auto;
+  padding-left: var(--viewport-padding-x) !important; 
+  padding-right: var(--viewport-padding-x) !important;
+  max-width: var(--viewport-max-width);
+  width: 100%;
+}

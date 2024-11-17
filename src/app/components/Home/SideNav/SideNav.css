@@ -1,0 +1,21 @@
+.side-nav {
+    padding-top: var(--section-padding-y);
+}
+
+.side-nav-wrapper {
+    position: sticky;
+    top: 0%;
+    right: 0%;
+    z-index: 20;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.side-nav-wrapper > nav a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: right;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}

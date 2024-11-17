@@ -1,0 +1,28 @@
+main#about {
+    padding: 70px 0;
+}
+
+main#about > .main-content {
+    display: block;
+    position: relative;
+}
+
+main#about > .main-content > h2 {
+    max-width: 350px;
+}
+
+main#about > .main-content > p.grey {
+    max-width: 430px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+/* Blog post */
+main#about > .main-content  > .blog-link.small {
+    margin-top: 50px;
+    width: max-content;
+}
+
+main#about > .main-content  > .blog-link.small > .blog-title {
+    max-width: 350px;
+}

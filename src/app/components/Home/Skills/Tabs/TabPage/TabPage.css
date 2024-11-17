@@ -1,0 +1,32 @@
+.skills-tab-page {
+    display: none;
+}
+
+.skills-tab-page.selected {
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.skills-tab-page.selected .tags, .skills-tab-page.selected .body, .skills-tab-page.selected > .extra {
+    order: initial;
+}
+
+@media screen and (max-width: 650px) {
+    .skills-tab-page.selected {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .skills-tab-page.selected .tags {
+        order: 1;
+    }
+    .skills-tab-page.selected .body {
+        order: 2;
+    }
+    .skills-tab-page.selected > .extra {
+        order: 3;
+    }
+}

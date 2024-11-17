@@ -1,0 +1,123 @@
+:root {
+  --section-padding-y: 50px;
+}
+
+section.section-padding-y,
+main.section-padding-y {
+  padding-bottom: var(--section-padding-y);
+  padding-top: var(--section-padding-y);
+}
+
+section.section-padding-bottom,
+main.section-padding-bottom {
+  padding-bottom: var(--section-padding-y);
+}
+
+section.section-padding-top,
+main.section-padding-top {
+  padding-top: var(--section-padding-y);
+}
+
+
+/* font sizes are figma minus 12 */
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h3 { 
+  font-size: 20px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+h1.copy-url,
+h2.copy-url,
+h3.copy-url{
+  cursor: pointer;
+}
+
+h1.copy-url:hover::after,
+h2.copy-url:hover::after,
+h3.copy-url:hover::after {
+  content: " #";
+  color: rgba(255, 255, 255, 0.2)
+}
+
+/* HIGHLIGHT KEY INFORMATION */
+/* w/ regressing other words */
+p.grey,
+.grey {
+  color: rgba(255, 255, 255, 0.5)
+}
+
+p.grey > .highlight,
+.grey > .highlight { 
+  color: rgb(255, 255, 255)
+}
+
+/* w/ different colors */
+.highlight-primary {
+  color: transparent;
+  background-image: linear-gradient(30deg, #FF3A71, #FF5744);
+  background-clip: text;
+}
+
+/* ASSETS */
+.widget {
+  background-color: var(--secondary-background);
+  padding: 15px;
+  border-radius: 15px
+}
+.widget.clear {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 15px
+}
+
+/* Blog links */
+.blog-link {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: var(--secondary-background);
+  font-weight: 500;
+}
+.blog-link.small > .blog-title {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* Chips */
+.chip {
+  background-color: var(--secondary-background);
+  padding: 4px 7px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+.chip.icon {
+  padding: 6px 7px;
+}
+button.chip, a.chip {
+  color: rgba(255, 255, 255, 0.8);
+}
+button.chip:hover, a.chip:hover,
+button.chip:active, a.chip:active {
+  color: white
+}
+
+/* Tags */
+.tag {
+  background-color: rgba(255, 255, 255, 0.04);
+  padding: 4px 7px;
+  border-radius: 10px;
+  font-size: 14px;
+}

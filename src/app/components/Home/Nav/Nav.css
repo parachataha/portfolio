@@ -1,0 +1,29 @@
+:root {
+  --nav-padding-y: 20px;
+}
+
+.nav {
+  padding-top: var(--nav-padding-y);
+  padding-bottom: var(--nav-padding-y);
+  margin: 0px auto;
+
+  padding-left: var(--viewport-padding-x) !important; 
+  padding-right: var(--viewport-padding-x) !important;
+  max-width: var(--viewport-max-width);
+}
+
+.nav > ul > li {
+  margin-right: 20px;
+}
+
+.nav > ul > li > a {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  /* filter: blur(3px); */
+  transition: color 1s;
+}
+
+.nav > ul > li > a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.5s;
+}

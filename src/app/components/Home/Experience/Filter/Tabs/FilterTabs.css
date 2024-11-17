@@ -1,0 +1,64 @@
+#experience .top .filter-tabs {
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+} 
+
+#experience .top .filter-tabs > button {
+    padding: 3px 10px 3px 10px; 
+    margin: 0 20px 0 0;
+
+    transform: translate(0px, 2px);
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+#experience .top .filter-tabs button.tags-extra,
+#experience .top .filter-tabs button.tags-extra-extra {
+    display: block;
+}
+
+#experience .top .filter-tabs > button:hover,
+#experience .top .filter-tabs > button:active {
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Tabs UI */
+#experience .top .filter-tabs > button[disabled] {
+    color: rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+}
+#experience .top .filter-tabs > button.showing {
+    color: white;
+    border-bottom: 2px solid rgba(255, 255, 255);
+}
+
+@media screen and (max-width: 1000px) { 
+    #experience .top .filter-tabs > button {
+        margin: inherit 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #experience .top .filter-tabs button.tags-extra-extra {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #experience .top .filter-tabs button.tags-extra {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    #experience .top .filter-tabs {
+        display: none;
+    }
+    #experience .experience-timeline {
+        padding: 0px 0 !important;
+    }
+}

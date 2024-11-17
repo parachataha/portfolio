@@ -1,0 +1,89 @@
+/* TIMELINE EFFECT */
+#experience .experience-timeline::after {
+    content: " ";
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 8%);
+    height: 100%;
+    padding: 1px;
+    position: absolute;
+    top: 0%;
+    right: 49%;
+}
+/* TIMELINE EFFECT */
+
+#experience .experience-timeline {
+    position: relative;
+    margin: 40px 0;
+}
+
+.experience-timeline .experience-timeline-grid.left,
+.experience-timeline .experience-timeline-grid.right {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.experience-timeline .experience-timeline-grid.left {
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+}
+.experience-timeline .experience-timeline-grid.right {
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 0%;
+}
+
+
+/* #experience .experience-timeline::after {
+    position: absolute;
+    top: 0%;
+    content: " ";
+    padding: 0 1px;
+    margin: 100px 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+} */
+
+/* NO TAGS SELECTED UI */
+#experience .experience-timeline:has(.no-tags-selected)::after {
+    content: "";
+    display: none;
+}
+
+.experience-timeline .no-tags-selected p.title {
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 7px;
+    color: rgba(255, 255, 255)
+}
+
+@media screen and (max-width: 900px) {
+    #experience .experience-timeline::after {
+        content: "";
+        display: none;
+    }
+
+    .experience-timeline .experience-timeline-grid.left {
+        display: grid;
+        grid-template-columns: 70% 30%;
+    } 
+    .experience-timeline .experience-timeline-grid.right {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    } 
+
+    .experience-timeline .experience-timeline-grid .extra-block-for-grid {
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .experience-timeline .experience-timeline-grid.left,
+    .experience-timeline .experience-timeline-grid.right {
+        display: block;
+    } 
+
+    .experience-timeline .experience-timeline-grid .extra-block-for-grid {
+        display: none;
+    }
+}

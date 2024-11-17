@@ -1,0 +1,35 @@
+#contact {
+    background-image: url("/images/home/contact-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: -8%;
+}
+
+/* WIDGETS */
+/* Titles */
+#contact .widget .title {
+    font-weight: 700;
+    font-size: 18px !important;
+    display: flex;
+}
+#contact .widget .title svg {
+    transform: translate(0, 25%);
+    color: rgba(255, 255, 255, 0.277);
+    margin-right: 8px;
+}
+
+#contact .widget:has(> a) {
+    max-width: 400px;
+}
+#contact .widget {
+    max-width: 600px;
+}
+#contact .widget > p {
+    font-size: 16px;
+}
+
+#contact .widget .discord-channel {
+    background-color: rgba(255, 255, 255, 0.09);
+    border-radius: 5px;
+    padding: 2px 3px;
+}

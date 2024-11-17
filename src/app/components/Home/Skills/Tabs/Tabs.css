@@ -1,0 +1,80 @@
+.skills-tabs-wrapper > .bottom-border {
+    padding-bottom: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 30px;
+    z-index: 3;
+    transform: translate(0, -1.5px);
+}
+
+ul.skills-tabs {
+    display: flex;
+    margin-top: 20px;
+    
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+/* TABS NAVIGATION */
+/* Main tab */
+ul.skills-tabs > li {
+    margin-right: 70px;
+}
+ul.skills-tabs > li:nth-child(5) {
+    margin-right: 0px;
+}
+
+ul.skills-tabs > li > button {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+}
+ul.skills-tabs > li > button:hover,
+ul.skills-tabs > li > button:active {
+    color: rgba(255, 255, 255);
+}
+
+/* Border colors */
+ul.skills-tabs > li > .bottom-gap {
+    padding-bottom: 5px;
+}
+
+ul.skills-tabs > li.active > .bottom-border {
+    margin-top: 3.5px;
+    padding-bottom: 2px;
+    background-image: linear-gradient(to right, #FF278E, #FF8400);
+    z-index: 6; 
+}
+
+ul.skills-tabs > li.active > .bottom-gap {
+    padding-bottom: 4px;
+}
+
+ul.skills-tabs > li.active > button {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right, #FF278E, #FF8400);
+}
+
+/* SCROLL ARROW */
+@media screen and (max-width: 1000px) {
+    ul.skills-tabs::after {
+        content: ">";
+        background-color: rgba(0, 0, 0, 0.2);
+        height: 100%;
+        width: calc(height);
+        padding: 0 6px;
+        backdrop-filter: blur(4px);
+        position: sticky;
+        right: 0%;
+        top: -15px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+    }
+    ul.skills-tabs:hover::after {
+        display: none;
+        content: "";
+    }
+}
+

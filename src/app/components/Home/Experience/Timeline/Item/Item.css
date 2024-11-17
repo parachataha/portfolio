@@ -1,0 +1,78 @@
+#experience .experience-timeline .experience-item {
+    position: relative;
+    max-width: 95%; /* this changes to 100% on smaller devices */
+}
+
+/* Left & Right */
+#experience .experience-timeline .experience-item.right {
+    margin-left: 10%;
+}
+
+#experience .experience-timeline .experience-item .glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 180%;
+    transform: translate(-50%, -50%);
+}
+
+/* CONTENT */
+#experience .experience-timeline .experience-item h3 {
+    font-size: 28px;
+    margin-bottom: 4px;
+    z-index: 10;
+}
+
+/* Images */
+#experience .experience-timeline .experience-item .images {
+    margin-bottom: 10px;
+    min-height: 100px;
+    background-color: var(--secondary-background);
+    border-radius: 15px;
+    border: .5px solid rgba(255, 255, 255, 0.06);
+}
+
+#experience .experience-timeline .experience-item .images img {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Tags */
+#experience .experience-timeline .experience-item .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+#experience .experience-timeline .experience-item .tags > a {
+    width: max-content;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 3px 6px;
+}
+#experience .experience-timeline .experience-item .tags > a:hover,
+#experience .experience-timeline .experience-item .tags > a:active {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+@media screen and (max-width: 960px) { 
+    #experience .experience-timeline .experience-item .images {
+        min-height: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) { 
+    #experience .experience-timeline .experience-item.right {
+        margin-left: 0%;
+    }
+}
+
+/* responsive grid */
+@media screen and (max-width: 900px) {
+    #experience .experience-timeline .experience-item {
+        max-width: 100%;
+    }
+}
