@@ -1,7 +1,5 @@
 import './Tabs.css'
-import Link from 'next/link'
 import TabPage from './TabPage/TabPage';
-import { useRef } from 'react';
 
 type selectedType = "" | "assets-ui-design" | "website-development" | "server-infrastructure" | "databases" 
 
@@ -81,7 +79,7 @@ export default function Tabs( {selected, setSelected} : Props ) {
 
                 <TabPage selected={selected === "databases"} skill={{
                     name: "databases",
-                    body: <> <span className='highlight'>Database design</span> is critical for speed and security. I'm experienced with Firebase Firestore, <span className='highlight'>MySQL</span>, and <span className='highlight'>PostgreSQL</span>, ensuring that all database infrastructures are optimised to handle data efficiently while keeping it <span className='highlight'>secure</span> and reliable. </>,
+                    body: <> <span className='highlight'>Database design</span> is critical for speed and security. I&apos;m experienced with Firebase Firestore, <span className='highlight'>MySQL</span>, and <span className='highlight'>PostgreSQL</span>, ensuring that all database infrastructures are optimised to handle data efficiently while keeping it <span className='highlight'>secure</span> and reliable. </>,
                     tags: ["databases", "firestore", "mysql", "postgresql"],
                     blogPosts: [{title: "Designing databases for speed and security", link: ""}],
                     moreInfo: "Every database I create is built to deliver high performance and protect your data.",

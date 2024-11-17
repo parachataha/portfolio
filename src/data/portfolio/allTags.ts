@@ -1,4 +1,4 @@
-import { AllTags } from "@/types/data/portfolio/allTags";
+import { AllTags } from "@/types/data/portfolio/AllTags"
 
 const allTags : AllTags = [ 
     "development", "design", "education", 

@@ -7,12 +7,11 @@ export interface ExperienceData {
     url: string,
     glow?: string,
     customization: {
-        navigateButtons: {
-            type: "left-right" | string | null 
-            previous: "previous" | "up" | string | null,
-            next: "next" | "down" | "see-more" | string,
+        navigateButtons?: {
+            type?: "left-right" | string | null 
+            previous?: "previous" | "up" | string | null,
+            next?: "next" | "down" | "see-more" | string,
         },
-        imageType: "images" | "ideas" | "mockups" | "collection" | string,
-        styles?: any,
+        imageType?: "images" | "ideas" | "mockups" | "collection" | string,
     }
 }

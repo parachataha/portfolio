@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Skills from "./components/Home/Skills/Skills";
 
 export const metadata: Metadata = {
   title: "Taha Paracha",

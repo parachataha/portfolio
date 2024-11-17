@@ -27,13 +27,13 @@ export default function ImageCarousel( {data} : Props ) {
 
     return(<div className='image-carousel'>
 
-        {data?.customization?.navigateButtons.type === "left-right" && 
+        {(data?.customization?.navigateButtons?.type) === "left-right" && 
             <div key="left-right" className="buttons right-left">
                 <button onClick={handlePrevious} id="previous"> {data?.customization?.navigateButtons?.previous} </button>
                 <button onClick={handleNext} id="next"> {data?.customization?.navigateButtons?.next} </button>
             </div> 
         }
-        {data?.customization?.navigateButtons.type === "top-bottom" && 
+        {data?.customization?.navigateButtons?.type === "top-bottom" && 
             <div key="top-bottom" className="buttons top-bottom">
                 <button onClick={handlePrevious} id="previous"> {data?.customization?.navigateButtons?.previous} </button>
                 <button onClick={handleNext} id="next"> {data?.customization?.navigateButtons?.next} </button>

@@ -6,12 +6,11 @@ import { ExperienceData } from "@/types/data/portfolio/Experience"
 interface Props {
     data: ExperienceData,
     className?: string,
-    style?: any,
 }
 
 // `url('/images/home/experience/'${data.glow}')`
 
-export default function Item( {data, className, style} : Props ) {
+export default function Item( {data, className} : Props ) {
 
     return (<div className={`experience-item ${className}`} >
 
@@ -44,7 +43,7 @@ export default function Item( {data, className, style} : Props ) {
         </div>
 
         <div className="tags">
-            {data.tags.map((tag, index) => {
+            {data.tags.map((tag) => {
                 if (tag.show) return <a href={`/?experience=${tag.url ? tag.url : tag.name}#experience`} key={tag.name}> {tag.name.replaceAll("-", " ")} </a>
             })}
         </div>

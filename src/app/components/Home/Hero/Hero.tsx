@@ -11,7 +11,7 @@ export default function Hero() {
 
       <div className="container main-content">
 
-        <h1>Hi, I'm Taha.</h1>
+        <h1>Hi, {"I'm"} Taha.</h1>
         <h3 className='info-1 grey'>I develop and design your businesses online presence</h3>
 
         <div className="bottom">

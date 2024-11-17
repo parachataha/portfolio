@@ -1,3 +1,4 @@
+import Link from "next/link"
 import "./Footer.css"
 
 export default function Footer() {
@@ -15,7 +16,7 @@ export default function Footer() {
                     <p className='font-bold mt-2'>About</p>
                     <p className="grey">
                         Im a developer and designer dedicated to helping my clients dreams come true. I create websites that inspire and design backend infrastructure 
-                        <br/> <a href="/#skills" className='underline text-white'>learn more</a>
+                        <br/> <Link href="/#skills" className='underline text-white'>learn more</Link>
                     </p>
                 </div>
                 <div className='links flex flex-col'>

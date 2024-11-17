@@ -11,12 +11,11 @@ import data from "@/data/portfolio/experience.json"
 
 interface Props {
     showing: options[],
-    setShowing: any,
+    setShowing: (value: string[]) => void,
     maxItems: number, 
-    setMaxItems: any,
 }
 
-export default function Timeline( {showing, setShowing, maxItems, setMaxItems} : Props ) {
+export default function Timeline( {showing, setShowing, maxItems} : Props ) {
 
     const [filteredData, setFilteredData] = useState<ExperienceData[]>(data);
 
