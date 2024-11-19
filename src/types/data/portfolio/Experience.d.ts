@@ -4,9 +4,9 @@ export interface ExperienceData {
     who?: string,
     tags: { name: "development" | "design" | "other" | "education" | string, url?: string | null, show?: boolean }[]
     images: { url: string, name: string, format: "svg" | "img" | string, blurDataURL?: string }[],
-    url: string,
+    url?: string,
     glow?: string,
-    customization: {
+    customization?: {
         navigateButtons?: {
             type?: "left-right" | string | null 
             previous?: "previous" | "up" | string | null,

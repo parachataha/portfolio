@@ -78,7 +78,7 @@ function ExperienceContent() {
         <div className="stats center"></div>
       </div>
 
-      <Timeline setShowing={setShowing} showing={showing} maxItems={maxItems} setMaxItems={setMaxItems} />
+      <Timeline setShowing={setShowing} showing={showing} maxItems={maxItems} />
 
       {maxItems < data.length &&<div className="flex justify-center">
         <button className='chip ml-[11px]' onClick={() => setMaxItems(maxItems + 2)}>Show more</button>
