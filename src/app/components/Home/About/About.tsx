@@ -7,7 +7,7 @@ export default function About() {
 
       <div className="main-content">
 
-        <h2 className='copy-url'>
+        <h2>
           I develop and design <span className='highlight-primary'>websites</span> and infrastructure 
         </h2>
         

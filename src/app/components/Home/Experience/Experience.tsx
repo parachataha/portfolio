@@ -9,6 +9,8 @@ import FilterDropdown from './Filter/Dropdown/FilterDropdown';
 
 export type options = "design" | "development" | "others" | "education" | string;
 
+import data from "@/data/portfolio/experience.json"
+
 export default function Experience() {
     
     const [showing, setShowing] = useState<options[]>(["development", "design"]);
@@ -76,7 +78,12 @@ function ExperienceContent() {
         <div className="stats center"></div>
       </div>
 
-      <Timeline setShowing={setShowing} showing={showing} maxItems={maxItems} />
+      <Timeline setShowing={setShowing} showing={showing} maxItems={maxItems} setMaxItems={setMaxItems} />
+
+      {maxItems < data.length &&<div className="flex justify-center">
+        <button className='chip ml-[11px]' onClick={() => setMaxItems(maxItems + 2)}>Show more</button>
+      </div>}
+
     </section>
   );
 }

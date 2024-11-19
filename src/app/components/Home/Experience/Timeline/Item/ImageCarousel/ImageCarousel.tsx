@@ -48,15 +48,15 @@ export default function ImageCarousel( {data} : Props ) {
             <div key={img.name}>
                 {index === slide ? 
                     (img.format === "img" ?  
-                        <Image placeholder="blur" blurDataURL={img.blurDataURL ? img.blurDataURL : defaultBlurDataURL} loading="eager" className='image' alt={img.name} src={`${img.url}`} width={400} height={200}/>
+                        <Image placeholder="blur" blurDataURL={img.blurDataURL ? img.blurDataURL : defaultBlurDataURL} loading="eager" className='image' alt={img.name} src={`/images/home/experience/${img.url}`} width={400} height={200}/>
                         :
-                        <img loading="eager" className='image' alt={img.name} src={`${img.url}`} width={400} height={200}/>
+                        <img loading="eager" className='image' alt={img.name} src={`/images/home/experience/${img.url}`} width={400} height={200}/>
                     ) 
                     : 
                     (img.format === "img" ?  
-                        <Image placeholder="blur" blurDataURL={img.blurDataURL ? img.blurDataURL : defaultBlurDataURL} loading="lazy" className='image hidden' alt={img.name} src={`${img.url}`} width={400} height={200}/>
+                        <Image placeholder="blur" blurDataURL={img.blurDataURL ? img.blurDataURL : defaultBlurDataURL} loading="lazy" className='image hidden' alt={img.name} src={`/images/home/experience/${img.url}`} width={400} height={200}/>
                         :
-                        <img loading="eager" className='image hidden' alt={img.name} src={`${img.url}`} width={400} height={200}/>
+                        <img loading="eager" className='image hidden' alt={img.name} src={`/images/home/experience/${img.url}`} width={400} height={200}/>
                     )
                 }
             </div>

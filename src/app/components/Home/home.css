@@ -107,7 +107,7 @@ p.grey > .highlight,
   padding: 6px 7px;
 }
 button.chip, a.chip {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
 }
 button.chip:hover, a.chip:hover,
 button.chip:active, a.chip:active {

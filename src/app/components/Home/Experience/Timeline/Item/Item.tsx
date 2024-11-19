@@ -33,9 +33,9 @@ export default function Item( {data, className} : Props ) {
             </> : <>
             
                 {data.images[0].format === "img" ? 
-                    <Image loading="eager" alt={`${data.name} ${data.tags[0]} work`} width={400} height={200} src={`${data.images[0].url}`}/> 
+                    <Image loading="eager" alt={`${data.name} ${data.tags[0]} work`} width={400} height={200} src={`/images/home/experience/${data.images[0].url}`}/> 
                     :
-                    <img loading="eager" alt={`${data.name} ${data.tags[0]} work`} width={400} height={200} src={`${data.images[0].url}`}/> 
+                    <img loading="eager" alt={`${data.name} ${data.tags[0]} work`} width={400} height={200} src={`/images/home/experience/${data.images[0].url}`}/> 
                 }
                 
             </>}

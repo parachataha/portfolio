@@ -13,9 +13,10 @@ interface Props {
     showing: options[],
     setShowing: (value: string[]) => void,
     maxItems: number, 
+    setMaxItems: (value: number) => void,
 }
 
-export default function Timeline( {showing, setShowing, maxItems} : Props ) {
+export default function Timeline( {showing, setShowing, maxItems, setMaxItems} : Props ) {
 
     const [filteredData, setFilteredData] = useState<ExperienceData[]>(data);
 
@@ -62,7 +63,6 @@ export default function Timeline( {showing, setShowing, maxItems} : Props ) {
             </div>
             
         </div>}
-        
 
     </div>)
 }

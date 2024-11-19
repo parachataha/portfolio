@@ -9,6 +9,11 @@
     z-index: 20;
     padding-right: 20px;
     padding-top: 20px;
+    margin-top: 40px;
+}
+
+.side-nav-wrapper > nav {
+    
 }
 
 .side-nav-wrapper > nav a {
