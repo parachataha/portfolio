@@ -21,7 +21,7 @@ export default function Experience() {
 
         <h2 className="copy-url">Experience</h2>
 
-        <Timeline setShowing={setShowing} showing={showing} maxItems={maxItems} />
+        <Timeline setShowing={setShowing} showing={showing} maxItems={maxItems} setMaxItems={setMaxItems} />
         
         </section>}>
         <ExperienceContent />
@@ -78,11 +78,7 @@ function ExperienceContent() {
         <div className="stats center"></div>
       </div>
 
-      <Timeline setShowing={setShowing} showing={showing} maxItems={maxItems} />
-
-      {maxItems < data.length &&<div className="flex justify-center">
-        <button className='chip ml-[11px]' onClick={() => setMaxItems(maxItems + 2)}>Show more</button>
-      </div>}
+      <Timeline setShowing={setShowing} showing={showing} maxItems={maxItems} setMaxItems={setMaxItems} />
 
     </section>
   );

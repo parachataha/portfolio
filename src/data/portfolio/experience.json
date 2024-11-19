@@ -137,9 +137,9 @@
             "glow": "",
             "imageType": "designs",
             "navigateButtons": {
-                "type": "left-right",
-                "previous": "previous",
-                "next": "next"
+                "type": "top-bottom",
+                "previous": "Scroll Up",
+                "next": "Scroll Down"
             }
         }
     }
