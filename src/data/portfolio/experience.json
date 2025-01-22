@@ -16,7 +16,7 @@
             { "url": "nester/nester - How to deposit into your e-wallet account.svg", "name": "How to deposit into your e-wallet account", "format": "svg" },
             { "url": "nester/nester- navigate through settings and more.svg", "name": "How to navigate through your settings", "format": "svg" },
             { "url": "nester/nester - withdraw funds to external account.svg", "name": "How to withdraw to an external account", "format": "svg" },
-            { "url": "nester - what is nester.svg", "name": "What is nester?", "format": "svg" }
+            { "url": "nester/nester - what is nester.svg", "name": "What is nester?", "format": "svg" }
         ],
         "url": "",
         "glow": "nester.png",
