@@ -6,7 +6,7 @@
         "who": "client",
         "tags": [ 
             { "name": "design", "show": true} , { "name": "social-media", "show": true} , { "name": "figma", "show": true},
-            { "name": "youtube" }
+            { "name": "youtube" }, { "name": "thumbnail" }
         ],
         "images": [
             { "url": "nester/nester - create an account with nester.svg", "name": "How to create an account with Nester", "format": "svg" },
@@ -15,7 +15,8 @@
             { "url": "nester/nester - view your e-wallet details.svg", "name": "How to view your e-wallet details", "format": "svg" },
             { "url": "nester/nester - How to deposit into your e-wallet account.svg", "name": "How to deposit into your e-wallet account", "format": "svg" },
             { "url": "nester/nester- navigate through settings and more.svg", "name": "How to navigate through your settings", "format": "svg" },
-            { "url": "nester/nester - withdraw funds to external account.svg", "name": "How to withdraw to an external account", "format": "svg" }
+            { "url": "nester/nester - withdraw funds to external account.svg", "name": "How to withdraw to an external account", "format": "svg" },
+            { "url": "nester - what is nester.svg", "name": "What is nester?", "format": "svg" }
         ],
         "url": "",
         "glow": "nester.png",
