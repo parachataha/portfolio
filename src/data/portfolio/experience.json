@@ -143,6 +143,30 @@
                 "next": "Scroll Down"
             }
         }
+    },
+
+    {
+        "name": "Portfolio V1",
+        "who": "my project",
+        "tags": [ 
+                { "name": "development", "show": true }, { "name": "design", "show": true }, { "name": "website", "show": true }, { "name": "frontend" },
+                { "name": "react" }
+            ],
+        "images": [
+            { "url": "portfolio-v1/portfolio v1 - landing page.svg", "name": "Portfolio V1 landing section", "format": "svg" },
+            { "url": "portfolio-v1/portfolio v1 - about.svg", "name": "Portfolio V1 about section", "format": "svg" },
+            { "url": "portfolio-v1/portfolio v1 - projects.svg", "name": "Portfolio V1 projects section", "format": "svg" },
+            { "url": "portfolio-v1/portfolio v1 - contact.svg", "name": "Portfolio V1 contact section", "format": "svg" }
+        ],
+        "customization": {
+            "glow": "",
+            "imageType": "designs",
+            "navigateButtons": {
+                "type": "top-bottom",
+                "previous": "Scroll Up",
+                "next": "Scroll Down"
+            }
+        }
     }
 
 ]
