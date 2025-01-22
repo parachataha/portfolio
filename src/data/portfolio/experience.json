@@ -146,7 +146,7 @@
     },
 
     {
-        "name": "Portfolio V1",
+        "name": "Portfolio v1",
         "who": "my project",
         "tags": [ 
                 { "name": "development", "show": true }, { "name": "design", "show": true }, { "name": "website", "show": true }, { "name": "frontend" },
